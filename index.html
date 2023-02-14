@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="main">
+      <h1>Basketball Scoreboard:</h1>
+      <div id="score">
+        <div class="score-team">
+          <h2>TEAM 1</h2>
+          <h2 class="e-score" id="count-el1">0</h2>
+          <button onclick="selectTeam(1)">SELECT</button>
+        </div>
+        <div class="score-team">
+          <h2>TEAM 2</h2>
+          <h2 class="e-score" id="count-el2">0</h2>
+          <button onclick="selectTeam(2)">SELECT</button>
+        </div>
+      </div>
+      <button class="increment-btn" onclick="increment(1)">+1</button>
+      <button class="increment-btn" onclick="increment(2)">+2</button>
+      <button class="increment-btn" onclick="increment(3)">+3</button>
+      <button id="save-btn" onclick="save()">SAVE</button>
+      <p id="save-el">Previous entries:</p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
