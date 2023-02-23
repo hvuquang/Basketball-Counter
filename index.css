@@ -10,7 +10,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 #main {
@@ -18,8 +17,6 @@ body {
     min-width: 700px;
     min-height: 450px;
     max-height: 450px;
-    background-image: url("epic.webp");
-    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,7 +28,7 @@ body {
     width: 400px;
     height: 300px;
     margin: 0 auto;
-    padding: 30px 50px;
+    padding: 65px 80px;
 }
 
 h1 {
@@ -56,6 +53,7 @@ button {
     height: 50px;
     width: 100px;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 .btn-section {
@@ -73,7 +71,7 @@ button {
 #save-btn {
     background: darkgreen;
     font-family: point, sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     margin-right: 30px;
 }
 
@@ -82,7 +80,6 @@ button {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-
     padding: 5px;
 }
 
@@ -106,9 +103,18 @@ button {
     color: #9AABD8;
 }
 
+#foul-el {
+    color: #9AABD8;
+}
+
 #btn-section {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+#foul-btn {
+    font-family: point, sans-serif;
+    font-size: 25px;
+    width: 110px;
+}
