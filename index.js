@@ -5,32 +5,16 @@ let count = 0
 let id = 0
 
 
-function increment(i) {
+function increment(i,id) {
     // count += 1
     if (id === 1) {
         count = parseInt(countEl1.textContent)
-        if (i === 1) {
-            count += 1
-        }
-        else if (i === 2) {
-            count += 2
-        }
-        else if (i === 3) {
-            count += 3
-        }
+        count += i
         countEl1.textContent = count
     }
     else if (id === 2) {
         count = parseInt(countEl2.textContent)
-        if (i === 1) {
-            count += 1
-        }
-        else if (i === 2) {
-            count += 2
-        }
-        else if (i === 3) {
-            count += 3
-        }
+        count += i
         countEl2.textContent = count
     }
     else {
@@ -47,9 +31,4 @@ function save() {
     countEl2.textContent = 0
     count = 0
     id = 0
-}
-
-function selectTeam(i) {
-    if (i === 1) id = 1
-    else if (i === 2) id = 2
 }

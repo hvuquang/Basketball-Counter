@@ -9,24 +9,30 @@
   </head>
   <body>
     <div id="main">
-      <h1>Basketball Scoreboard:</h1>
-      <div id="score">
-        <div class="score-team">
-          <h2>TEAM 1</h2>
-          <h2 class="e-score" id="count-el1">0</h2>
-          <button onclick="selectTeam(1)">SELECT</button>
+      <section id="score-section">
+        <div id="score">
+          <div class="score-team">
+            <h2>HOME</h2>
+            <h2 class="e-score">0</h2>
+            <div class="btn-section">
+              <button class="increment-btn" onclick="increment(1,1)">+1</button>
+              <button class="increment-btn" onclick="increment(2,1)">+2</button>
+              <button class="increment-btn" onclick="increment(3,1)">+3</button>
+            </div>
+          </div>
+          <div class="score-team">
+            <h2>GUEST</h2>
+            <h2 class="e-score">0</h2>
+            <div class="btn-section">
+              <button class="increment-btn" onclick="increment(1,2)">+1</button>
+              <button class="increment-btn" onclick="increment(2,2)">+2</button>
+              <button class="increment-btn" onclick="increment(3,2)">+3</button>
+            </div>
+          </div>
         </div>
-        <div class="score-team">
-          <h2>TEAM 2</h2>
-          <h2 class="e-score" id="count-el2">0</h2>
-          <button onclick="selectTeam(2)">SELECT</button>
-        </div>
-      </div>
-      <button class="increment-btn" onclick="increment(1)">+1</button>
-      <button class="increment-btn" onclick="increment(2)">+2</button>
-      <button class="increment-btn" onclick="increment(3)">+3</button>
-      <button id="save-btn" onclick="save()">SAVE</button>
-      <p id="save-el">Previous entries:</p>
+        <button id="save-btn" onclick="save()">NEW</button>
+        <p id="save-el">LastScore:</p>
+      </section>
     </div>
     <script src="index.js"></script>
   </body>
